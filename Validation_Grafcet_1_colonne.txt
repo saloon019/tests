@@ -1,0 +1,50 @@
+GRAFCET Fct_Stands_FB — une colonne, collecteurs communs
+
+Fichier principal : Grafcet_Fct_Stands_1_colonne.vsdx
+Alternative éditable : Grafcet_Fct_Stands_1_colonne_editable.vdx
+Aperçu vectoriel : Grafcet_Fct_Stands_1_colonne.pdf
+
+Une seule page verticale, environ 27,6 cm × 3,05 m.
+Les 64 étapes sont alignées sur une seule colonne, dans l’ordre numérique.
+Le fichier ouvre la vue sur le haut de la colonne ; utiliser le zoom et le défilement pour lire la planche.
+
+Les liaisons latérales vers une même destination utilisent un collecteur vertical commun.
+Chaque branche rejoint ce collecteur après sa propre barre de transition.
+Les branches de défaut vers 999 sont ainsi regroupées sur un seul collecteur.
+Les segments communs des arrêts et des autres sauts sont également mutualisés.
+Les jonctions sont indiquées par des points. Les croisements avec un blanc ne sont pas reliés.
+Les portions de collecteurs de destinations différentes ne se chevauchent pas sur la même piste.
+La continuité centrale entre deux étapes adjacentes reste directe lorsque la liaison existe.
+La proximité de deux étapes dans la colonne ne crée pas de nouvelle transition :
+notamment 90 → 100 contourne l’étape terminale 99, qui n’a aucune sortie explicite.
+
+Contenu conservé :
+- 64 étapes uniques ;
+- 159 transitions avec leurs réceptivités et leurs chemins ;
+- titres et commentaires des réseaux ;
+- 132 variantes de messages SPV/IHM dans 107 encarts ;
+- textes complets, conditions et références stockés dans les données des formes ;
+- règle de forçage global R100 représentée séparément.
+
+Contrôles réalisés :
+- une page, 1 944 formes natives et même abscisse pour les 64 étapes ;
+- ordre vertical numérique strict ;
+- 159/159 chemins vérifiés du carré source à la barre puis au carré destination ;
+- 22 collecteurs uniques par destination sur 10 pistes réutilisées ;
+- 13 destinations à entrées multiples regroupées ;
+- 466 fils structurels collés aux deux extrémités ;
+- 1 062 points de collage vérifiés aussi par leurs coordonnées ;
+- 132 messages, 64 titres et 159 réceptivités comparés à l’extraction ;
+- intégrité ZIP/XML et cibles des relations internes contrôlées ;
+- VDX : 767 textes, 5 168 propriétés et 1 062 connexions conservés ;
+- VDX : 7 809 sommets graphiques comparés aux coordonnées du VSDX ;
+- lecture VSDX et VDX avec Aspose Diagram, sans sauvegarde SDK ;
+- import et rendu LibreOffice : une page, mêmes dimensions et mêmes textes ;
+- même texte affiché dans le PDF de référence et le PDF importé du VSDX.
+
+Microsoft Visio n’est pas installé dans cet environnement ; son ouverture n’y a pas été testée.
+Le conteneur VSDX conserve les paramètres et styles du modèle utilisé pour la livraison précédente.
+
+La reconstruction suit le code : 280 → 290 et 470 → 500, même lorsque le titre indique une autre destination.
+Les OU représentent les demandes possibles de changement d’étape ; leur priorité reste celle du programme.
+Le FC Isii_G7 absent du XML n’est pas simulé. Aucun fonctionnement interne ou lien supplémentaire n’est inventé.
