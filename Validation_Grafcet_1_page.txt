@@ -1,0 +1,46 @@
+GRAFCET Fct_Stands_FB — une seule page éditable
+
+Fichier principal : Grafcet_Fct_Stands_1_page.vsdx
+Format XML Visio alternatif : Grafcet_Fct_Stands_1_page_editable.vdx
+Aperçu vectoriel : Grafcet_Fct_Stands_1_page.pdf
+
+Planche unique de 114,8 × 77,5354 pouces (environ 2,92 × 1,97 m).
+Utiliser le zoom pour lire la planche ; les six colonnes sont sur la même page.
+
+Contenu :
+- 64 étapes uniques, sans duplication et sans renvois numérotés ;
+- 159 barres de transition individuelles et tous les chemins tracés ;
+- divergences et convergences en OU ;
+- 61 transitions de défaut distinctes rejoignant l’étape 999 par des collecteurs en OU ;
+- titres et commentaires des réseaux associés aux étapes ;
+- 132 variantes de messages SPV/IHM dans 107 encarts, les variantes identiques étant regroupées ;
+- textes complets, conditions d’origine et références des réseaux conservés dans les données des formes ;
+- forçage global R100 vers l’étape 0 dessiné séparément.
+
+Lecture : carré = étape ; barre épaisse = transition ; branche simple = OU.
+Les croisements entourés de blanc ne sont pas des jonctions. Les points pleins marquent les jonctions.
+Bleu = cycle/reprises ; orange = arrêts ; rouge = défaut.
+Les ET dans les réceptivités sont des opérateurs logiques : ils n’introduisent pas de synchronisation de branches.
+
+Contrôles du VSDX :
+- une seule page et 1 903 formes natives ;
+- 159/159 chemins vérifiés, du carré source à la barre puis au carré destination ;
+- 451 fils structurels collés à leurs deux extrémités ;
+- 1 032 points de collage vérifiés aussi par leurs coordonnées ;
+- 64 titres, 159 réceptivités et 132 enregistrements de messages comparés aux données extraites ;
+- intégrité ZIP/XML et cibles des relations internes contrôlées ;
+- lecture indépendante avec Aspose Diagram et import/rendu LibreOffice ;
+- même texte affiché dans le PDF de référence et le PDF importé du VSDX ;
+- VDX : une page, 1 903 formes, 798 textes, 4 887 propriétés et 1 032 connexions conservés ;
+- VDX : 7 998 sommets géométriques comparés aux coordonnées du VSDX ;
+- VDX chargé indépendamment par Aspose Diagram en lecture seule ;
+- VSDX et VDX importés par LibreOffice : une page, mêmes dimensions, même texte affiché.
+
+Le VSDX conserve le conteneur et les styles du modèle Visio utilisé dans la livraison précédente.
+Aucun enregistrement n’est effectué avec un SDK en mode évaluation.
+Microsoft Visio n’est pas disponible dans cet environnement ; son ouverture n’y a pas été testée.
+
+La reconstruction suit le code lorsque le titre du réseau indique une autre destination :
+280 va vers 290 ; 470 va vers 500. L’étape 99 n’a pas de transition explicite dans l’export.
+Les OU représentent les demandes possibles de changement d’étape ; la priorité entre demandes simultanées reste celle du programme.
+Le FC Isii_G7 n’est pas fourni dans le XML : son fonctionnement interne et l’initialisation ne sont pas simulés.
