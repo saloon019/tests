@@ -1,0 +1,44 @@
+GRAFCET une colonne — sortie 9999 et connexions liées aux étapes
+
+Fichier principal : Grafcet_Fct_Stands_1_colonne_9999.vsdx
+Alternative éditable : Grafcet_Fct_Stands_1_colonne_9999_editable.vdx
+Aperçu : Grafcet_Fct_Stands_1_colonne_9999.pdf
+
+La sortie auparavant nommée 99 apparaît sous le numéro 9999, après l’étape de défaut 999, tout en bas de la page.
+La référence 99 du XML TIA reste conservée dans les données de forme pour assurer la correspondance avec le programme.
+Les commentaires visibles, le statut et l’annotation de sortie utilisent 9999.
+
+Déplacer une étape dans Visio :
+1. Activer l’outil Pointeur (Ctrl+1).
+2. Sélectionner le carré de l’étape.
+3. Utiliser les flèches gauche/droite ou le déplacer horizontalement.
+Les transitions, leurs conditions, le commentaire et les encarts suivent horizontalement le carré.
+Les connecteurs restent collés à leurs points de connexion et leurs coudes suivent le déplacement.
+Les collecteurs verticaux communs restent en place et les branches conservent leur destination.
+Les marques blanches des croisements suivent également les liaisons.
+Les quatre côtés de chaque carré disposent de points de connexion Visio.
+
+Le suivi est assuré par les formules natives de la feuille ShapeSheet, sans macro.
+Les routes restent dans les couloirs définis ; il n’y a pas de recalcul automatique de la disposition globale.
+Le déplacement horizontal est préparé ; la position verticale des composants locaux reste celle de la planche.
+
+Contrôles :
+- une seule page ; 64 étapes uniques et sortie 9999 en dernière position ;
+- 159 transitions et chemins source → transition → destination vérifiés ;
+- 132 enregistrements de messages conservés dans 107 encarts ;
+- 22 collecteurs sur 9 pistes, sans chevauchement sur une même piste ;
+- 466 fils structurels et 1 062 points de collage vérifiés ;
+- 1 003 formes locales liées horizontalement à leur étape ;
+- 531 connecteurs et 182 marques de croisements munis de formules de suivi ;
+- 128 déplacements simulés : chaque étape décalée de +0,5 et −0,5 pouce ;
+- 135 936 contrôles d’extrémités, 159 488 contrôles de segments orthogonaux et 23 296 contrôles de marques de croisements réussis ;
+- aucun cycle de dépendances, les 22 collecteurs restent fixes ;
+- lecture VSDX avec Aspose Diagram, sans sauvegarde SDK ;
+- import/rendu LibreOffice : une seule page et mêmes textes que l’aperçu ;
+- VDX : 767 textes, 5 231 propriétés et 1 062 connexions préservés ;
+- VDX : 23 689 formules natives préservées, y compris les ancrages et la géométrie ;
+- VDX ouvert indépendamment par Aspose Diagram : 1 page et 1 943 formes, aucune sauvegarde SDK ;
+- VSDX et VDX importés dans LibreOffice : mêmes dimensions et même texte sur une page.
+
+Microsoft Visio n’est pas installé dans cet environnement ; les vérifications de déplacement sont des évaluations indépendantes des formules ShapeSheet.
+Le fonctionnement du programme TIA n’est pas modifié. La priorité des demandes reste celle du programme ; le FC Isii_G7 absent du XML n’est pas simulé.
