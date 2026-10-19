@@ -1,0 +1,60 @@
+GRAFCET Shelter Analyse H2 — reconstruction indépendante
+
+Source : Fct_Shelter_Analyse_H2_FB.xml
+SHA-256 : c14ed477e3fc2925ddd3bd60fc8fc4c3752ddcab76a96817aebec8d88d3df061
+
+Fichier principal : Grafcet_Shelter_Analyse_H2_Visio2013.vsdx
+Alternative éditable : Grafcet_Shelter_Analyse_H2_Visio2013_editable.vdx
+Aperçu : Grafcet_Shelter_Analyse_H2_Visio2013.pdf
+
+Présentation : une seule page verticale, une colonne d’étapes dans l’ordre numérique,
+liaisons vers une même destination regroupées sur des collecteurs communs.
+La sortie 99 du programme est affichée 9999 en bas ; son identité XML reste conservée.
+Les commentaires de réseaux, les statuts SPV R4 et les messages opérateur sont associés aux étapes.
+Les formats de l’ancien bloc sont réutilisés ; aucune ancienne transition ou condition n’est reprise.
+
+Contenu analysé :
+- 65 réseaux : 40 LAD et 25 SCL ;
+- 34 étapes uniques ;
+- 47 écritures G7.G_X_New dont le forçage global R61 ;
+- 76 transitions conservées hors forçage global ;
+- 31 transitions de défaut vers 999 ;
+- 54 blocs écrivant des messages et 56 variantes conditionnelles, 28 SPV et 28 IHM ;
+- 48 encarts après regroupement strict des textes et conditions identiques.
+
+Les textes SCL du réseau précédent et les textes directs des CONCAT Ladder sont pris en compte.
+Les variantes des étapes 50, 500 et 503 sont conservées ; les textes SPV et IHM différents restent séparés.
+L’en-tête R5 (étape, Shelter/stand, type d’analyse) est représenté par des champs dynamiques,
+abrégé dans l’affichage et conservé avec son expression source dans les données des formes.
+Les noms de variables et expressions d’origine restent dans les données des transitions/messages.
+
+Particularités du code :
+- R50 : les conditions 500 → 501/502/503 peuvent être vraies simultanément ; aucune exclusivité n’est inventée.
+- R60 : Api_Reset est une commande sous STOPPING pour les étapes concernées, et non une transition directe vers 99.
+- R61 : remise à zéro sous désactivation ou absence de demande H2 avec Num_stand <> 8 et G_X > 5.
+- R64/R65 : actions des résultats, commande de vanne et FinAnalyse conservées dans les données et commentaires pertinents.
+- R62 : moteur Isii_G7, Front = DB_Plc.B1s et Init = DB_Plc.BIT_INIT ; son corps n’est pas fourni.
+
+Déplacement horizontal dans Visio :
+Activer le Pointeur (Ctrl+1), sélectionner le carré d’une étape, puis utiliser les flèches gauche/droite.
+Les transitions, réceptivités, commentaires et messages suivent le carré ; les connexions restent collées.
+Les collecteurs communs restent fixes. Les points de connexion sont disponibles sur les quatre côtés du carré.
+Le suivi repose sur des formules ShapeSheet natives, sans macro et sans redistribution globale automatique.
+
+Contrôles réussis :
+- une page et 976 formes natives ;
+- 76 chemins et conditions identiques à l’audit du XML source ;
+- 34 statuts, commentaires et actions sources contrôlés ;
+- 56 messages identiques à une extraction indépendante ;
+- 14 collecteurs sur 10 pistes, sans chevauchement sur une même piste ;
+- 232 fils structurels et 534 points de collage contrôlés ;
+- 980 contrôles de vérité des contacts/bobines d’actions et 952 contrôles par contexte d’étape ;
+- 68 simulations : chaque étape décalée de +0,5 et −0,5 pouce ;
+- 267 connecteurs, 492 dépendants et 91 marques de croisements suivent correctement ;
+- aucun cycle de dépendances et collecteurs fixes ;
+- VDX : 377 textes, 2 761 propriétés, 534 connexions et 11 853 formules préservés ;
+- VSDX et VDX lus indépendamment avec Aspose Diagram, sans sauvegarde SDK ;
+- import/rendu LibreOffice : une page, mêmes dimensions et mêmes textes que l’aperçu.
+
+Microsoft Visio n’est pas installé dans cet environnement. Les déplacements sont vérifiés par un évaluateur indépendant des formules ShapeSheet ; l’ouverture dans Microsoft Visio n’y est pas exécutée.
+Le diagramme documente le XML ; il ne simule pas le FC Isii_G7 absent ni ne change la priorité des écritures du programme.
