@@ -1,0 +1,21 @@
+Correction de compatibilité Visio
+
+L’export initial a produit l’erreur Microsoft Visio 271.
+Le VSDX a été reconstruit en conservant les paramètres, styles, feuille de document et fenêtres d’un conteneur VSDX produit par Visio.
+Les propriétés de texte sont typées STR et les connecteurs 1D ont des dimensions non négatives et des transformations complètes.
+Le fichier principal et le fichier *_corrige.vsdx sont identiques. Le second nom évite de confondre la nouvelle livraison avec un ancien téléchargement.
+
+Une version XML Visio historique, *_editable.vdx, est fournie comme autre voie d’ouverture éditable dans Visio 2013.
+
+Contrôles réalisés :
+- 23 pages et 2917 formes natives conservées ;
+- 1596 textes et 3543 propriétés conservés ;
+- 1084 connexions et 2704 sommets de liaisons conservés ;
+- 64 étapes et 159 liaisons de demandes de changements d’étapes ;
+- intégrité ZIP, cibles des relations et cohérence des références vérifiées ;
+- lecture avec deux bibliothèques indépendantes et import/rendu LibreOffice ;
+- aucun enregistrement effectué par un SDK en mode évaluation.
+
+Limite : Microsoft Visio n’est pas disponible dans l’environnement. L’ouverture dans Microsoft Visio 2013 reste à confirmer sur votre ordinateur ; les contrôles ci-dessus ne la remplacent pas. La cause exacte de l’erreur 271 n’a pas pu être isolée avec certitude.
+
+Le GRAFCET est une reconstruction documentaire du XML TIA fourni, sans simulation du FC Isii_G7 absent de l’export.
