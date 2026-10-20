@@ -1,0 +1,55 @@
+GRAFCET indépendant — dépotage Stand 1 MP / évent
+
+Document fonctionnel à revoir, pas un programme PLC.
+Sources : analyse fonctionnelle utilisateur §§5.18.9 / 5.18.10, précisions utilisateur,
+et tronc/purge du XML Fct_Stands_FB.
+
+Fichier principal : Grafcet_Depotage_Stand1_MP_Event_Visio2013.vsdx
+Alternative éditable : Grafcet_Depotage_Stand1_MP_Event_Visio2013_editable.vdx
+Aperçu : Grafcet_Depotage_Stand1_MP_Event_Visio2013.pdf
+Annexe de revue : Notes_Depotage_Stand1_MP_Event.pdf et .md
+
+Une page, une colonne, collecteurs communs par destination, sortie 99 affichée 9999.
+Les connecteurs et les éléments locaux suivent le déplacement horizontal du carré.
+Les anciens diagrammes Stands et Shelter sont conservés séparément.
+
+Contenu :
+- 63 étapes et 137 transitions : 50 d’origine XML, 87 fonctionnelles proposées ;
+- 17 étapes du tronc 0 à 140, dont 131/132, conservées avec leurs 41 sorties et 28 messages ;
+- purge 480/490 et sorties d’origine inchangées, aucun renvoi 480→100 ajouté ;
+- 77 variantes de messages dans 76 encarts ;
+- deux branches MP / évent puis séquences communes de repli et d’enlèvement ;
+- STOP MP, protections et AU représentés séparément ; aucun réarmement automatique inventé ;
+- arrêt progressif manuel non détecté par le BPCS représenté comme annotation ;
+- évent manuel : AU ne coupe pas ce flux, perte MET = alarme seulement ;
+- surveillance maintenue jusqu’aux attentes de fermeture 800 (MP) et 810 (évent).
+
+Décisions utilisateur intégrées :
+- test pression ET débit du XML : ABS(P−Pref) <= Delta_P_Max_etanch et ABS(Q−Qref) <= Delta_Q_Max_etanch ;
+- égalité aux seuils admise, aucun critère de 10 % ;
+- 79–84 barg au réglage initial MP à l’arrêt ; 75–84 barg au réglage correctif ;
+- purge après rejet qualité conservée à l’identique, à préciser ultérieurement ;
+- consigne de fermeture évent du texte AF conservée, discordance signalée à valider.
+
+L’annexe documente deux points confirmés et neuf points encore ouverts, dont accès au mode évent pollué,
+isolements de fin/repli, suites après protections/AU, conditions de stabilité et correspondances de repères.
+Le forçage R100 est présenté comme héritage du tronc ; sa portée dans l’extension AF doit être adaptée.
+Il n’est pas assimilé à la désactivation du cycle ni à une autorisation de court-circuiter le repli.
+
+Contrôles réussis :
+- 1 page et 1 660 formes natives ;
+- 137 chemins et réceptivités comparés au modèle, 77 messages conservés ;
+- préfixe, purge, conditions XML, références et messages strictement comparés à la source ;
+- 25 collecteurs sur 13 pistes, sans chevauchement sur une même piste ;
+- 400 fils structurels collés et 928 coordonnées de points de collage contrôlées ;
+- 126 simulations de déplacement horizontal (63 étapes, chacune ±0,5 pouce) ;
+- 464 connecteurs et 823 éléments locaux suivent, 25 collecteurs restent fixes ;
+- 20 262 formules/caches évalués, aucun cycle de dépendance ;
+- VDX : 630 textes, 5 352 propriétés, 928 connexions et 20 262 formules préservés ;
+- VSDX et VDX lus avec Aspose Diagram en lecture seule, sans sauvegarde SDK ;
+- VSDX et VDX importés/rendus dans LibreOffice : une page et même texte que l’aperçu ;
+- annexe PDF de 8 pages contrôlée visuellement.
+
+Microsoft Visio n’est pas installé ici. Les déplacements sont vérifiés par une évaluation indépendante
+ShapeSheet, pas par une exécution de Microsoft Visio. Le document ne valide pas un automatisme de procédé,
+ne modifie pas le programme Stands et ne résout pas les points AF laissés à valider.
