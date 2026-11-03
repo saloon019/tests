@@ -1,0 +1,21 @@
+{
+  "source_xml_sha256": "e7a4883f9c238457dafd0da759189fc370766387277755437b718b65bd1cd7b8",
+  "files": {
+    "Grafcet_Stands_Remplissage.vsdx": "f9e7fbedcc112f6c8f0c22fa485bed3e17327acbd8022bc800c49e488c6a67fa",
+    "Grafcet_Stands_Remplissage.pdf": "e8d298ed5499aed2a6d3babdbae50849613f55d24dbe1d00235a845af9655e8c",
+    "Grafcet_Stands_Remplissage_editable.vdx": "4e17d3f7cd18f1db8033b8b42809a0eb5b55822d517798a2a9c8933a25a3c2ff",
+    "Grafcet_Stands_Depotage.vsdx": "25de88b7e6ce1c2a0a9813e8d8ae47a78d5fc490c6aedac8b81a9005363b28cf",
+    "Grafcet_Stands_Depotage.pdf": "17e77b3faadfb9e5bd6aae6227fdedb34648ec638ce19f514651f690064c94dc",
+    "Grafcet_Stands_Depotage_editable.vdx": "d9cb1ebfc5a9b236532c3906ed8a6b13764210eca048aaa678dbff40eec0a3c0",
+    "Grafcet_Stands_Depotage_Event.vsdx": "055778f047ffde8873ff2defac3464635173209fddc55d4d8f0eb62ef8f58c3e",
+    "Grafcet_Stands_Depotage_Event.pdf": "2dc43d88ca5032bda58f00c560549e3284a6320ff260e5cc21a27ffae3b1b7a0",
+    "Grafcet_Stands_Depotage_Event_editable.vdx": "c3b7680a1983bb79f5a56f9dd67820c35e6480c4aee5d060737ee709db2abc14",
+    "Grafcet_Stands_Analyse_Trailer.vsdx": "7822d40250342ae11d53d96da72a0dfa694c23c33d48890b7f409ac90e9da4bf",
+    "Grafcet_Stands_Analyse_Trailer.pdf": "da243b05d1cf26809473950fa476e05c52d7a06437df249359b07f474aebdec3",
+    "Grafcet_Stands_Analyse_Trailer_editable.vdx": "335c6e1f14c7f00b02429cc683412eaee794e33cc08454d8af66d85f1a5c28b6",
+    "Lire_les_4_Grafcets.pdf": "64a2115f24096359b1fa2e84691794403b59946d58bcec68013f1f37ab02b97e",
+    "Lire_les_4_Grafcets.md": "4c8f996bf7c5e77e828da4bb85dee6ee577329aa647047bf768602b50ed7bea3",
+    "Validation_4_Modes.txt": "c69851af27bac2be8dff299480d756160e8be8649774a4e39708e0c54048a476",
+    "README.md": "b3a946df7bc1c579aafcfea273ea417235429dd562f5f01e8a9a889cae9b0968"
+  }
+}

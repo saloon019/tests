@@ -1,0 +1,52 @@
+Nouveau Fct_Stands_FB — quatre GRAFCET indépendants
+
+Source : XML fourni le 3 novembre 2026.
+SHA256 : e7a4883f9c238457dafd0da759189fc370766387277755437b718b65bd1cd7b8
+
+Les quatre fichiers VSDX et PDF suivent chacun un lancement réel à l’étape 10 :
+- Remplissage : Parametres.Dde_Remplissage_Trailer →20 ; 63 étapes, 177 liaisons dessinées, 130 messages /105encarts.
+- Dépotage : Parametres.Depotage.Dde_Depotage →25 ; 58 étapes, 127 liaisons, 118 messages /111encarts.
+- Dépotage évent : Parametres.Depotage_Event.Dde_Depotage_Event →26 ; 62 étapes, 134 liaisons, 118 messages /112encarts.
+- Analyse Trailer : Parametres.Dde_Analyse_Trailer →21 ; 14 étapes, 32 liaisons, 16 messages /16encarts.
+
+Une page par fichier, une colonne numérique, collecteurs communs par destination,
+commentaires de réseau, popups SPV/IHM conditionnels et connecteurs ancrés.
+La sortie du programme 99 est affichée 9999 en bas, avec son identité originale conservée.
+Les numéros décalés du nouveau programme sont conservés.
+
+La séparation est faite par atteignabilité après la branche choisie, avec 0/10 comme frontière de nouveau cycle.
+Les demandes sont remises à FALSE par les quatre RCoil de R8 et ne sont pas maintenues artificiellement vraies.
+Aucune exclusivité de demandes simultanées n’est inventée. Dépotage/évent exigent aussi Num_Stand=1.
+
+Particularités fidèlement conservées :
+- étapes133/134 réellement traitées dans R23 malgré le titre limité à130 ;
+- sauts853→860 et870→871 selon les Moves réels ;
+- choix IHM pour les sorties861/862 depuis860 malgré son intitulé « Salle de contrôle » ;
+- retours306/316 vers G7_G_X_mem, sans retour fixe260 inventé ;
+- ces deux retours sont développés en22cas conditionnels :0etles10étapes déclarées de240à310 ;
+- cette projection documentaire ne prouve pas les valeurs initiales Retain ni l’atteignabilité de0 ;
+- le programme n’interdit pas les autres valeurs de mémoire dans la garde du saut : à vérifier ;
+- les popups de l’analyseur externe sont prioritaires R255 et signalés comme externes ;
+- aucune ancienne hypothèse de l’analyse fonctionnelle n’est imposée au nouveau code.
+
+Analyse source et contrôles :
+- 256 réseaux :139LAD/117SCL ;176étapes ;213écritures G_X_New dont le forçage R252 ;
+- 414 liaisons abstraites,434après développement documentaire des deux sauts mémoire ;
+- 176étapes exactement couvertes par l’union des quatre graphes :169propres et7communes ;
+- 242écrivains popup,370messages conditionnels locaux,185IHM/185SPV ;
+- 2061contrôles de messages réussis, aucun texte temporaire non résolu ;
+- graphe indépendant : toutes les étapes, réceptivités, destinations, messages et sources de chaque mode contrôlés ;
+- 394simulations de déplacement horizontal, une étape à la fois de±0,5pouce ;
+- 1587connecteurs,3077dépendants locaux et60collecteurs fixes contrôlés ;
+- 71129formules/caches,367480contrôles d’extrémités,430754segments orthogonaux,61744contrôles de halos ;
+- aucun cycle de dépendance ni connecteur détaché ;
+- VDX : toutes les formules, données, textes, coordonnées et collages source préservés ;
+- VSDX/VDX lus avec Aspose Diagram en lecture seule sans sauvegarde SDK ;
+- VSDX/VDX importés par LibreOffice : une page chacun, mêmes dimensions et texte que l’aperçu.
+
+Utilisation : Pointeur(Ctrl+1), sélectionner le carré puis décaler horizontalement.
+Les éléments locaux et les raccordements suivent ; les collecteurs restent fixes.
+Ce suivi utilise les formules ShapeSheet, sans macro ni recalcul global de la disposition.
+
+Microsoft Visio n’est pas installé ici. Les simulations vérifient les formules, pas l’exécution de Visio.
+Ces fichiers documentent le XML fourni ; aucune modification du programme automate n’est effectuée.
