@@ -1,0 +1,396 @@
+{
+  "passed": true,
+  "source": "Fct_Shelter_Analyse_H2_FB.xml",
+  "source_sha256": "afd04bcdf513eb9935f635555ed7d8cf57a9d924697ccca7d0a76f890b0fcfbd",
+  "source_verified": true,
+  "views": [
+    {
+      "view": "general",
+      "file": "Grafcet_Analyse_H2_General_V2.vsdx",
+      "sha256": "630abd55b69552589ba50acb9addab276aff47c596f8fc732d1ff41e6ef78ad1",
+      "steps": 34,
+      "transitions": 76,
+      "messages": 56
+    },
+    {
+      "view": "trailer",
+      "file": "Grafcet_Analyse_H2_Trailer_V2.vsdx",
+      "sha256": "cb53e532b40cf7b2a2b4f9ee7edf5993cf08e90429f0f22cb27e9b7bddbb2709",
+      "steps": 26,
+      "transitions": 54,
+      "messages": 38
+    },
+    {
+      "view": "debut_milieu_fin",
+      "file": "Grafcet_Analyse_H2_Debut_Milieu_Fin_V2.vsdx",
+      "sha256": "c1f315db84ed9a189cffedac821692bf2459363dd6edcc9802398a4d0be5539a",
+      "steps": 21,
+      "transitions": 45,
+      "messages": 26
+    }
+  ],
+  "model_traceability": {
+    "passed": true,
+    "source_sha256": "afd04bcdf513eb9935f635555ed7d8cf57a9d924697ccca7d0a76f890b0fcfbd",
+    "source_xml_steps": 34,
+    "source_xml_transitions": 76,
+    "derived_T004_restriction": "(Fct.State_Run ET Ech_Stand_Analyse.Stands.H2.Milieu) OU (Fct.State_Run ET Ech_Stand_Analyse.Stands.H2.fin)",
+    "views": {
+      "general": {
+        "view": "general",
+        "errors": [],
+        "passed": true,
+        "steps": 34,
+        "transitions": 76,
+        "messages": 56,
+        "message_boxes": 48,
+        "global_reset_R61_preserved": true,
+        "global_actions_preserved": 7,
+        "source_only_restriction": null,
+        "source_sha256": "afd04bcdf513eb9935f635555ed7d8cf57a9d924697ccca7d0a76f890b0fcfbd"
+      },
+      "trailer": {
+        "view": "trailer",
+        "errors": [],
+        "passed": true,
+        "steps": 26,
+        "transitions": 54,
+        "messages": 38,
+        "message_boxes": 33,
+        "global_reset_R61_preserved": true,
+        "global_actions_preserved": 7,
+        "source_only_restriction": null,
+        "source_sha256": "afd04bcdf513eb9935f635555ed7d8cf57a9d924697ccca7d0a76f890b0fcfbd"
+      },
+      "debut_milieu_fin": {
+        "view": "debut_milieu_fin",
+        "errors": [],
+        "passed": true,
+        "steps": 21,
+        "transitions": 45,
+        "messages": 26,
+        "message_boxes": 20,
+        "global_reset_R61_preserved": true,
+        "global_actions_preserved": 7,
+        "source_only_restriction": "T004 excludes special stand8 call",
+        "source_sha256": "afd04bcdf513eb9935f635555ed7d8cf57a9d924697ccca7d0a76f890b0fcfbd"
+      }
+    }
+  },
+  "native_validation": {
+    "general": {
+      "passed": true,
+      "path": "/workspace/analyse_v2_work/general/visio/Grafcet_Analyse_H2_General_V2.vsdx",
+      "sha256": "630abd55b69552589ba50acb9addab276aff47c596f8fc732d1ff41e6ef78ad1",
+      "errors": [],
+      "steps": 34,
+      "transitions": 76,
+      "messages": 56,
+      "message_boxes": 48,
+      "shape_count": 1043,
+      "layout": {
+        "type": "parallel logical phases",
+        "columns": {
+          "trailer": 8.22,
+          "common": 27.82,
+          "debut_milieu_fin": 47.42000000000001
+        },
+        "initial_shared_steps": 2,
+        "shared_analysis_steps": 8,
+        "final_shared_steps": 3
+      },
+      "native_checks": {
+        "glued_endpoints": 556,
+        "steps_and_comment_pairs": 34,
+        "transition_colours": 76,
+        "updated_timer_q_receptivities_visible": 3,
+        "or_colours": 91,
+        "structural_wire_colours": 243,
+        "popup_bodies_visible_and_full_headers_in_properties": 48,
+        "geometry_vertices": 4591,
+        "junction_markers": 99
+      },
+      "collector_segments": 25,
+      "page_size_inches": {
+        "PageWidth": 59.1,
+        "PageHeight": 115.53899999999997
+      },
+      "source_popup_expressions_exact": true,
+      "popup_bodies_visible_full_headers_preserved_in_properties": true,
+      "actual_new_timer_q_receptivities_visible": true,
+      "actions_and_reset_exact": true,
+      "T004_restriction_metadata_preserved": false,
+      "source_sha256": "afd04bcdf513eb9935f635555ed7d8cf57a9d924697ccca7d0a76f890b0fcfbd"
+    },
+    "trailer": {
+      "passed": true,
+      "path": "/workspace/analyse_v2_work/trailer/visio/Grafcet_Analyse_H2_Trailer_V2.vsdx",
+      "sha256": "cb53e532b40cf7b2a2b4f9ee7edf5993cf08e90429f0f22cb27e9b7bddbb2709",
+      "errors": [],
+      "steps": 26,
+      "transitions": 54,
+      "messages": 38,
+      "message_boxes": 33,
+      "shape_count": 722,
+      "layout": {
+        "type": "single numeric column",
+        "column_x": 8.56
+      },
+      "native_checks": {
+        "glued_endpoints": 394,
+        "steps_and_comment_pairs": 26,
+        "transition_colours": 54,
+        "updated_timer_q_receptivities_visible": 3,
+        "or_colours": 62,
+        "structural_wire_colours": 170,
+        "popup_bodies_visible_and_full_headers_in_properties": 33,
+        "geometry_vertices": 3166,
+        "junction_markers": 64
+      },
+      "collector_segments": 12,
+      "page_size_inches": {
+        "PageWidth": 20.240000000000002,
+        "PageHeight": 98.53949999999999
+      },
+      "source_popup_expressions_exact": true,
+      "popup_bodies_visible_full_headers_preserved_in_properties": true,
+      "actual_new_timer_q_receptivities_visible": true,
+      "actions_and_reset_exact": true,
+      "T004_restriction_metadata_preserved": false,
+      "source_sha256": "afd04bcdf513eb9935f635555ed7d8cf57a9d924697ccca7d0a76f890b0fcfbd"
+    },
+    "debut_milieu_fin": {
+      "passed": true,
+      "path": "/workspace/analyse_v2_work/debut_milieu_fin/visio/Grafcet_Analyse_H2_Debut_Milieu_Fin_V2.vsdx",
+      "sha256": "c1f315db84ed9a189cffedac821692bf2459363dd6edcc9802398a4d0be5539a",
+      "errors": [],
+      "steps": 21,
+      "transitions": 45,
+      "messages": 26,
+      "message_boxes": 20,
+      "shape_count": 589,
+      "layout": {
+        "type": "single numeric column",
+        "column_x": 8.56
+      },
+      "native_checks": {
+        "glued_endpoints": 328,
+        "steps_and_comment_pairs": 21,
+        "transition_colours": 45,
+        "updated_timer_q_receptivities_visible": 3,
+        "or_colours": 52,
+        "structural_wire_colours": 142,
+        "popup_bodies_visible_and_full_headers_in_properties": 20,
+        "geometry_vertices": 2561,
+        "junction_markers": 60
+      },
+      "collector_segments": 12,
+      "page_size_inches": {
+        "PageWidth": 20.240000000000002,
+        "PageHeight": 78.83291666666666
+      },
+      "source_popup_expressions_exact": true,
+      "popup_bodies_visible_full_headers_preserved_in_properties": true,
+      "actual_new_timer_q_receptivities_visible": true,
+      "actions_and_reset_exact": true,
+      "T004_restriction_metadata_preserved": true,
+      "source_sha256": "afd04bcdf513eb9935f635555ed7d8cf57a9d924697ccca7d0a76f890b0fcfbd"
+    }
+  },
+  "movement": {
+    "passed": true,
+    "view_reports": {
+      "general": {
+        "passed": true,
+        "file": "/workspace/analyse_v2_work/general/visio/Grafcet_Analyse_H2_General_V2.vsdx",
+        "steps": 34,
+        "display_99": "9999",
+        "last_step_source": 99,
+        "formula_cache_checks": 12646,
+        "scenarios": 68,
+        "displacements_inches": [
+          -0.5,
+          0.5
+        ],
+        "glued_wires": 278,
+        "glue_endpoint_checks": 37808,
+        "orthogonal_segment_checks": 43792,
+        "halo_checks": 6936,
+        "row_dependents": 490,
+        "fixed_collectors": 20,
+        "fixed_common_rails": 5,
+        "cycles": 0,
+        "elapsed_seconds": 9.163,
+        "Microsoft_Visio_executed": false,
+        "sha256": "630abd55b69552589ba50acb9addab276aff47c596f8fc732d1ff41e6ef78ad1",
+        "shape_count": 1043,
+        "transition_count": 76,
+        "message_count": 56,
+        "wire_roles": {
+          "Wire": 243,
+          "Annotation": 34,
+          "GlobalForcing": 1
+        }
+      },
+      "trailer": {
+        "passed": true,
+        "file": "/workspace/analyse_v2_work/trailer/visio/Grafcet_Analyse_H2_Trailer_V2.vsdx",
+        "steps": 26,
+        "display_99": "9999",
+        "last_step_source": 99,
+        "formula_cache_checks": 8741,
+        "scenarios": 52,
+        "displacements_inches": [
+          -0.5,
+          0.5
+        ],
+        "glued_wires": 197,
+        "glue_endpoint_checks": 20488,
+        "orthogonal_segment_checks": 23348,
+        "halo_checks": 3484,
+        "row_dependents": 360,
+        "fixed_collectors": 12,
+        "fixed_common_rails": 0,
+        "cycles": 0,
+        "elapsed_seconds": 5.288,
+        "Microsoft_Visio_executed": false,
+        "sha256": "cb53e532b40cf7b2a2b4f9ee7edf5993cf08e90429f0f22cb27e9b7bddbb2709",
+        "shape_count": 722,
+        "transition_count": 54,
+        "message_count": 38,
+        "wire_roles": {
+          "Wire": 170,
+          "Annotation": 26,
+          "GlobalForcing": 1
+        }
+      },
+      "debut_milieu_fin": {
+        "passed": true,
+        "file": "/workspace/analyse_v2_work/debut_milieu_fin/visio/Grafcet_Analyse_H2_Debut_Milieu_Fin_V2.vsdx",
+        "steps": 21,
+        "display_99": "9999",
+        "last_step_source": 99,
+        "formula_cache_checks": 7166,
+        "scenarios": 42,
+        "displacements_inches": [
+          -0.5,
+          0.5
+        ],
+        "glued_wires": 164,
+        "glue_endpoint_checks": 13776,
+        "orthogonal_segment_checks": 15498,
+        "halo_checks": 2436,
+        "row_dependents": 278,
+        "fixed_collectors": 12,
+        "fixed_common_rails": 0,
+        "cycles": 0,
+        "elapsed_seconds": 3.39,
+        "Microsoft_Visio_executed": false,
+        "sha256": "c1f315db84ed9a189cffedac821692bf2459363dd6edcc9802398a4d0be5539a",
+        "shape_count": 589,
+        "transition_count": 45,
+        "message_count": 26,
+        "wire_roles": {
+          "Wire": 142,
+          "Annotation": 21,
+          "GlobalForcing": 1
+        }
+      }
+    },
+    "totals": {
+      "steps": 81,
+      "scenarios": 162,
+      "formula_cache_checks": 28553,
+      "glue_endpoint_checks": 72072,
+      "orthogonal_segment_checks": 82638,
+      "halo_checks": 12856,
+      "row_dependents": 1128,
+      "fixed_collectors": 44,
+      "fixed_common_rails": 5
+    }
+  },
+  "rendered_VSDX_and_VDX": [
+    {
+      "view": "general",
+      "one_page_each": true,
+      "same_display_text": true,
+      "dimensions_pt": [
+        [
+          0.0,
+          0.0,
+          4255.2001953125,
+          8318.8076171875
+        ],
+        [
+          0.0,
+          0.0,
+          4255.2001953125,
+          8318.806640625
+        ],
+        [
+          0.0,
+          0.0,
+          4255.2001953125,
+          8318.806640625
+        ]
+      ],
+      "text_chars": 12586,
+      "new_timer_signal_visible": true
+    },
+    {
+      "view": "trailer",
+      "one_page_each": true,
+      "same_display_text": true,
+      "dimensions_pt": [
+        [
+          0.0,
+          0.0,
+          1457.280029296875,
+          7094.84423828125
+        ],
+        [
+          0.0,
+          0.0,
+          1457.2913818359375,
+          7094.83447265625
+        ],
+        [
+          0.0,
+          0.0,
+          1457.2913818359375,
+          7094.83447265625
+        ]
+      ],
+      "text_chars": 11257,
+      "new_timer_signal_visible": true
+    },
+    {
+      "view": "debut_milieu_fin",
+      "one_page_each": true,
+      "same_display_text": true,
+      "dimensions_pt": [
+        [
+          0.0,
+          0.0,
+          1457.280029296875,
+          5675.97021484375
+        ],
+        [
+          0.0,
+          0.0,
+          1457.2913818359375,
+          5675.98095703125
+        ],
+        [
+          0.0,
+          0.0,
+          1457.2913818359375,
+          5675.98095703125
+        ]
+      ],
+      "text_chars": 9140,
+      "new_timer_signal_visible": true
+    }
+  ],
+  "Microsoft_Visio_executed": false
+}
