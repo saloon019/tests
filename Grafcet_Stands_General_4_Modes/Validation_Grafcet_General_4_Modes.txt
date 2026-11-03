@@ -1,0 +1,31 @@
+VALIDATION — GRAFCET GÉNÉRAL STANDS / QUATRE BRANCHES PARALLÈLES
+
+Source : Fct_Stands_FB.xml
+SHA256 source : e7a4883f9c238457dafd0da759189fc370766387277755437b718b65bd1cd7b8
+SHA256 VSDX : d4ad83018b75275c90e81369fd011b1763557e57646d4f0f4378dcfcc2da8302
+
+Une page ; 176 étapes uniques ; 434 cas dessinés ; 370 messages dans 332 encarts.
+Quatre colonnes : remplissage, dépotage, évent, analyse Trailer.
+Étapes communes uniques : 0, 10, 480, 490, 500, 999, 99 (affichée 9999).
+Quatre lancements de l’étape 10 et les deux sorties communes 500/999 conservés.
+176 états issus du XML, 414 transitions abstraites ; les deux destinations mémoire
+développées en 22 cas conditionnels donnent 434 cas dessinés.
+Aucun saut de programme, critère, ordre de priorité ni étape virtuelle ajouté.
+
+5400 formes ; 1455 connecteurs collés.
+56 collecteurs verticaux (52 locaux et 4 finaux communs), 4 rails horizontaux.
+37 pistes réparties dans des gouttières distinctes.
+2 910 coordonnées de collage et tous les sommets de géométrie corrects.
+Couleurs des carrés, numéros, fonds, barres, fils et jonctions comparées aux modes.
+352 déplacements simulés (+/- 0,5 pouce), 176 étapes ; tous réussis.
+65698 caches de formules vérifiés ; aucun cycle de dépendance.
+Les éléments locaux et raccordements suivent ; collecteurs et rails restent fixes.
+
+Les fichiers VSDX/VDX contiennent les textes, propriétés et connexions modifiables.
+Lecture indépendante en bibliothèque, sans sauvegarde SDK.
+Rendus LibreOffice des deux formats : une page chacun, mêmes textes que le PDF.
+Microsoft Visio n’a pas été exécuté dans cet environnement.
+
+Limites documentaires : domaine des valeurs retenues de G7_G_X_mem non prouvé ;
+FC Isii_G7 et contenu des popups du bloc analyseur externe absents du fichier XML.
+Les règles de l’ancienne analyse fonctionnelle ne sont pas réintroduites.
